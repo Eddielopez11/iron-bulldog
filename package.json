@@ -6,7 +6,8 @@
     "watch-dev": "webpack-dev-server --inline",
     "build": "webpack",
     "test": "jest",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
