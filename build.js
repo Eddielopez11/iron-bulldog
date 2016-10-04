@@ -8,12 +8,5 @@ import Login from './lib/Login'
 import ViewProfile from './lib/ViewProfile'
 
 render((
-  <Router history={ hashHistory }>
-    <Route path="/nav" component={ Nav }>
-      <Route path="/" component={ Home }/>
-      <Route path="/dashboard" component={ Dashboard }/>
-      <Route path="/login" component={ Login } />
-      <Route path="/viewprofile" component={ ViewProfile }/>
-    </Route>
-  </Router>
+  <Home/>
 ), document.getElementById('app'))
