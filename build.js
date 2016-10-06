@@ -8,5 +8,5 @@ import Login from './lib/Login'
 import ViewProfile from './lib/ViewProfile'
 
 render((
-  <Home/>
+  <ViewProfile/>
 ), document.getElementById('app'))
