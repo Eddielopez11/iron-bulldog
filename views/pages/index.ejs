@@ -3,9 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title> Iron Bulldog </title>
+    <!-- React JS -->
+    <script src="https://fb.me/react-15.3.0.min.js"></script>
+    <script src="https://fb.me/react-dom-15.3.0.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <!-- ReactFire -->
+    <script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
   </head>
   <body>
     <main id="app"></main>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDq4qafXDulRbCrszRXLButOQrOwYBhkd4",
+        authDomain: "iron-bulldog.firebaseapp.com",
+        databaseURL: "https://iron-bulldog.firebaseio.com",
+        storageBucket: "iron-bulldog.appspot.com",
+        messagingSenderId: "52533200805"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="javascripts/bundle.js" charset="utf-8"></script>
   </body>
 </html>
