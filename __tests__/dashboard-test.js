@@ -1,4 +1,4 @@
-import React form 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import TestUtils from 'react-addons-test-utils'
 import Dashboard from '../lib/Dashboard'
