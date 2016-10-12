@@ -4,23 +4,45 @@ import TestUtils from 'react-addons-test-utils'
 import Login from '../lib/Login'
 
 describe("Login", () => {
-  beforeEach(()=>{
-    window.firebase = {
-    database: ()=>{
-      return {
-        ref: ()=>{
-          return {
-            once: ()=>{
+  let loginRendered
+  let firebaseAuth
 
+  beforeEach(()=>{
+
+    window.firebase = {
+      auth: ()=>{
+        return {
+          onAuthStateChanged: ()=>{}
+        }
+      },
+      database: ()=>{
+        return {
+          ref: ()=>{
+            return {
+              once: ()=>{
+
+              }
             }
           }
         }
       }
     }
-  }
+    firebaseAuth = {
+      auth: {
+        GoogleAuthProvider: ()=>{}
+      }
+    }
+    loginRendered = TestUtils.renderIntoDocument(
+      <Login firebaseAuth={firebaseAuth}/>
+    )
   })
-  it("should be a passing test for setup", () => {
+  it("should have a sign in button", () => {
+    let signInEl = TestUtils.findRenderedDOMComponentWithClass(loginRendered, "login__signIn")
+    expect(signInEl).toBeDefined()
+  })
 
-    expect(true).toBe(true)
+  it("should have a sign out button", () => {
+    let signOutEl = TestUtils.findRenderedDOMComponentWithClass(loginRendered, "login__signOut")
+    expect(signOutEl).toBeDefined()
   })
 })
