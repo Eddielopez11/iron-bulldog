@@ -1,0 +1,53 @@
+.ironBulldog {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center; }
+
+.profile__pageHeader {
+  color: white; }
+
+.profile__userProfile {
+  border: 1px solid lightgrey;
+  height: 40%;
+  margin-bottom: 15px;
+  width: 100%; }
+
+.profile__accountSection {
+  border: 1px solid lightgrey;
+  height: 20%;
+  margin-bottom: 15px;
+  padding: 20px;
+  width: 100%; }
+  .profile__accountSection .profile__accountHeader {
+    color: white;
+    text-align: center; }
+  .profile__accountSection .profile__xboxGamertag {
+    color: white;
+    display: inline-block; }
+  .profile__accountSection .profile__xboxGamerImage {
+    width: 100px; }
+  .profile__accountSection .profile__topXboxGames {
+    list-style-type: none;
+    margin: auto; }
+    .profile__accountSection .profile__topXboxGames .profile__topGame {
+      color: lightgrey;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 75px; }
+      .profile__accountSection .profile__topXboxGames .profile__topGame .profile__topGameImage {
+        width: 60px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-image: url("../assets/pexels-photo-51415.jpeg");
+  background-size: 140%; }
+
+.main {
+  margin: 0 auto;
+  width: 80%; }
