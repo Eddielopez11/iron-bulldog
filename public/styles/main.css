@@ -206,6 +206,43 @@ h3 {
     outline: none;
     width: 80px; }
 
+.dashboard {
+  height: 900px; }
+
+.ironBulldog {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center; }
+
+.dashboard__activity {
+  border: 1px solid white;
+  display: inline-block;
+  height: 80%;
+  padding: 20px;
+  width: 60%; }
+
+.dashboard__friendsDiv {
+  display: inline-block;
+  width: 40%;
+  height: 80%;
+  vertical-align: bottom; }
+
+.dashboard__friends {
+  border: 1px solid white;
+  display: inline-block;
+  height: 50%;
+  padding: 20px;
+  width: 100%; }
+
+.dashboard__newFriends {
+  border: 1px solid white;
+  display: inline-block;
+  height: 50%;
+  padding: 20px;
+  width: 100%; }
+
 * {
   box-sizing: border-box;
   color: white;
@@ -213,7 +250,7 @@ h3 {
 
 body {
   margin: 0;
-  background-image: url("../assets/pexels-photo-51415.jpeg");
+  background-color: #2c3e50;
   background-size: cover; }
 
 .main {
