@@ -31,17 +31,17 @@ describe("ViewProfile", () => {
     )
   })
   it("should have an xbox account edit form", () => {
-    let xboxFormEl = TestUtils.findRenderedDOMComponentWithClass(viewProfileRendered, "editProfile__xboxForm")
+    let xboxFormEl = TestUtils.scryRenderedDOMComponentsWithClass(viewProfileRendered, "editProfile__form")
     expect(xboxFormEl).toBeDefined()
   })
 
   it("should have a league of legends edit form", () => {
-    let leagueFormEl = TestUtils.findRenderedDOMComponentWithClass(viewProfileRendered, "editProfile__leagueForm")
+    let leagueFormEl = TestUtils.scryRenderedDOMComponentsWithClass(viewProfileRendered, "editProfile__form")
     expect(leagueFormEl).toBeDefined()
   })
 
   it("should have a wow edit form", () => {
-    let wowFormEl = TestUtils.findRenderedDOMComponentWithClass(viewProfileRendered, "editProfile__wowForm")
+    let wowFormEl = TestUtils.scryRenderedDOMComponentsWithClass(viewProfileRendered, "editProfile__form")
     expect(wowFormEl).toBeDefined()
   })
 })
