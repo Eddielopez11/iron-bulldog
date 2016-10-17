@@ -8,6 +8,17 @@
 .profile__pageHeader {
   color: white; }
 
+input {
+  background-color: #ecf0f1;
+  border: 1px solid #34495e;
+  border-radius: 3px;
+  color: #34495e;
+  border: none;
+  height: 30px;
+  margin: 15px 6px 10px 0;
+  padding-left: 5px;
+  outline: none; }
+
 h2 {
   font-weight: normal; }
 
@@ -21,11 +32,23 @@ h3 {
   padding: 20px;
   width: 100%; }
   .profile__userProfile .editProfileButton {
-    display: inline-block; }
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    outline: none;
+    width: 100px; }
   .profile__userProfile .editProfileButton--hide {
     display: none; }
   .profile__userProfile .editProfileDoneButton {
-    display: none; }
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 3px;
+    display: none;
+    height: 40px;
+    outline: none;
+    width: 100px; }
   .profile__userProfile .editProfileDoneButton--show {
     display: inline-block; }
 
@@ -76,6 +99,13 @@ h3 {
     visibility: hidden; }
   .profile__accountLeagueHalf .editProfile__form--show {
     visibility: visible; }
+  .profile__accountLeagueHalf .formSubmit {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    outline: none;
+    width: 80px; }
 
 .profile__accountWowHalf {
   display: inline-block;
@@ -108,6 +138,13 @@ h3 {
     visibility: hidden; }
   .profile__accountWowHalf .editProfile__form--show {
     visibility: visible; }
+  .profile__accountWowHalf .formSubmit {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    outline: none;
+    width: 80px; }
 
 .profile__accountXboxSection {
   background-color: rgba(25, 25, 25, 0.6);
@@ -161,17 +198,18 @@ h3 {
     visibility: hidden; }
   .profile__accountXboxSection .editProfile__form--show {
     visibility: visible; }
+  .profile__accountXboxSection .formSubmit {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    outline: none;
+    width: 80px; }
 
 * {
   box-sizing: border-box;
   color: white;
   font-family: helvetica; }
-
-button {
-  background-color: lightgrey; }
-
-input {
-  background-color: lightgrey; }
 
 body {
   margin: 0;
