@@ -9,9 +9,10 @@ import ViewProfile from './lib/ViewProfile'
 
 render((
   <Router history={ hashHistory }>
-    <Route path="/" component={ Home }/>
-    <Route path="/login" component={ LoginWrapper }/>
-    <Route path="/profile" component={ ViewProfile }/>
-    <Route path="/dashboard" component={ Dashboard }/>
+    <Route path="/login" component={ LoginWrapper }>
+      <Route path="/" component={ Home }/>
+      <Route path="/profile" component={ ViewProfile }/>
+      <Route path="/dashboard" component={ Dashboard }/>
+    </Route>
   </Router>
 ), document.getElementById('app'))

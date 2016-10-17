@@ -206,6 +206,25 @@ h3 {
     outline: none;
     width: 80px; }
 
+button {
+  background-color: #2ecc71;
+  border-radius: 3px;
+  border: none;
+  outline: none; }
+
+.login__signIn {
+  display: inline-block; }
+
+.login__signIn--hide {
+  display: none; }
+
+.login__signOut {
+  display: none; }
+
+.login__signOut--show {
+  background-color: #e74c3c;
+  display: inline-block; }
+
 .dashboard {
   height: 900px; }
 
@@ -222,6 +241,15 @@ h3 {
   height: 80%;
   padding: 20px;
   width: 60%; }
+  .dashboard__activity .newActivity {
+    width: 75%; }
+  .dashboard__activity .formSubmit {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    outline: none;
+    width: 80px; }
 
 .dashboard__friendsDiv {
   display: inline-block;
