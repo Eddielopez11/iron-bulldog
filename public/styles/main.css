@@ -247,8 +247,7 @@ button {
 
 .login__signOut--show {
   background-color: #e74c3c;
-  display: inline-block;
-  position: absolute; }
+  display: inline-block; }
 
 .ironBulldog {
   color: white;
@@ -263,12 +262,12 @@ button {
   margin-bottom: 10px;
   position: absolute;
   right: 100px;
-  top: 50px; }
+  top: 110px; }
 
 .iconProfile {
   position: absolute;
   right: 40px;
-  top: 49px; }
+  top: 108px; }
 
 .dashboard {
   height: 900px; }
