@@ -18,6 +18,30 @@ h2
 h3
   font-weight: normal
 
+.searchReturnModal
+  background-color: rgba(0, 0, 0, .7)
+  border-radius: 15px
+  height: 100%
+  position: absolute
+  top: 0px
+  bottom: 0px
+  left: 0px
+  right: 0px
+  visibility: hidden
+
+.searchReturnModal--show
+  visibility: visible
+
+.editProfile__unlink
+  background-color: rgba(231, 76, 60,1.0)
+  visibility: hidden
+
+.editProfile__unlink:active
+  background-color: rgba(230, 126, 34,1.0)
+
+.editProfile__unlink--show
+  visibility: visible
+
 .profile__userProfile
   background-color: rgba(25,25,25, .6)
   border-radius: 15px
@@ -45,7 +69,7 @@ h3
     display: none
 
   .editProfileDoneButton
-    background-color: rgba(46, 204, 113,1.0)
+    background-color: rgba(231, 76, 60,1.0)
     border: none
     border-radius: 3px
     display: none
@@ -84,6 +108,7 @@ h3
   border-radius: 15px
   height: 20%
   margin-bottom: 15px
+  position: relative
   width: 100%
 
 
@@ -97,29 +122,6 @@ h3
   position: relative
   vertical-align: top
   width: 50%
-
-  .editProfile__leagueUnlink
-    background-color: rgba(192, 57, 43,1.0)
-    visibility: hidden
-
-  .editProfile__leagueUnlink:active
-    background-color: rgba(230, 126, 34,1.0)
-
-  .editProfile__leagueUnlink--show
-    visibility: visible
-
-  .leagueSearchReturn
-    background-color: rgba(0, 0, 0, .7)
-    border-radius: 15px
-    position: absolute
-    top: 0px
-    bottom: 0px
-    left: 0px
-    right: 0px
-    visibility: hidden
-
-  .leagueSearchReturn--show
-    visibility: visible
 
   .profile__leagueLogo
     width: 100px
@@ -176,9 +178,10 @@ h3
 
 .profile__accountWowHalf
   display: inline-block
-  height: 20%
+  height: 100%
   padding-left: 20px
   padding-right: 20px
+  position: relative
   vertical-align: top
   width: 50%
 
@@ -227,7 +230,6 @@ h3
 .profile__accountXboxSection
   background-color: rgba(25,25,25, .6)
   border-radius: 15px
-  height: 20%
   margin-bottom: 15px
   padding: 20px
   width: 100%
